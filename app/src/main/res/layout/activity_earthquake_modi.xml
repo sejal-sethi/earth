@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context="com.example.android.quakereport.earthquake_activity_modi"
+    >
+
+    <TextView
+        android:id="@+id/mag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="@drawable/magnitude_circle"
+        android:text="abc"
+        />
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+    <TextView
+        android:id="@+id/secloc"
+        android:paddingLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="TextView"
+        android:layout_weight="1" />
+    
+    <TextView
+        android:id="@+id/priloc"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:textColor="@color/textColorEarthquakeLocation"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"
+        >
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:layout_weight="1"
+        android:layout_gravity="end"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="TextView"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>
